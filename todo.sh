@@ -177,7 +177,7 @@ delete_todo() {
 
 # Main menu
 while true; do
-    choice=$(whiptail --menu "Todo Application Menu" 15 60 8 "Add Todo" "Add a new todo item" "List Todos" "List all todo items" "Search Todos" "Search todo items" "Edit Todo" "Edit a todo item" "Delete Todo" "Delete a todo item" "Exit" "Exit the application" 3>&1 1>&2 2>&3)
+    choice=$(whiptail --title "Zazang Sleep mode" --menu "Todo Application Menu" 15 60 8 "Add Todo" "Add a new todo item" "List Todos" "List all todo items" "Search Todos" "Search todo items" "Edit Todo" "Edit a todo item" "Delete Todo" "Delete a todo item" "Exit" "Exit the application" 3>&1 1>&2 2>&3)
 
     case $choice in
         "Add Todo")
